@@ -1,8 +1,9 @@
 function makeid(l) {
-  let res="";
-		let rand="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+  var res="";
+		var rand="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
 	for(let i=0;i<l;i++){
-		res=res+rand.charAt(Math.floor(
+		res+=rand.charAt(
+			Math.floor(
 			Math.random()*rand.length;
 		)
 	  )	
